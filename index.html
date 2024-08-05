@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload File</title>
+    <title>Chức Năng Tải Lên Tệp Tin</title>
 </head>
 <body>
-    <h1>Upload File</h1>
+    <h1>Upload Files for Processing</h1>
     <form action="upload.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".dat" required>
-        <input type="submit" value="Upload File">
+        <div>
+            <label for="file1">Tệp tin điểm danh:</label>
+            <input type="file" id="file1" name="file-cham-cong" accept=".dat" required>
+        </div>
+        <div>
+            <label for="file2">Tệp tin người dùng:</label>
+            <input type="file" id="file2" name="user_file" accept=".dat" required>
+        </div>
+        <div>
+            <button type="submit">Xử lý tệp tin</button>
+        </div>
     </form>
 </body>
 </html>
